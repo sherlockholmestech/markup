@@ -14,10 +14,9 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-pub mod read_file {
-    pub fn read_input_file(path: &str) -> String {
+pub mod write_file {
+    pub fn write_output_file(output_file: &str, contents: &str) {
         use std::fs;
-        let input = fs::read_to_string(path).expect("ERR 00 -- Unable to read input");
-        return input;
+        fs::write(output_file, contents).expect("ERR 01 -- Unable to write file");
     }
 }

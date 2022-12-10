@@ -15,8 +15,9 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 pub mod read_input;
-use crate::read_input::read_args;
+pub mod write_input;
+use crate::read_input::read_file;
+use crate::write_input::write_file;
 fn main() {
-    let input = read_args::read_input_file();
-    println!("{}", input);
+    println!("Hello World");
 }
