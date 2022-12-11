@@ -14,10 +14,13 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-pub mod read_file {
-    pub fn read_input_file(path: &str) -> String {
-        use std::fs;
-        let input = fs::read_to_string(path).expect("ERR 00 -- Unable to read input");
-        return input;
+pub mod read_args{
+    use std::env;
+
+    fn get_input_file() -> String {
+        use std::env;
+        let args: Vec<String> = env::args().collect();
+        let filename = args.get(1).expect("ERR 10 -- Unable to get filename");
+        return filename.to_string();
     }
 }

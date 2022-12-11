@@ -14,10 +14,9 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-pub mod read_input;
-pub mod write_input;
-use crate::read_input::read_file;
-use crate::write_input::write_file;
+pub mod io;
+pub mod args;
+use crate::io::read_write;
 fn main() {
     println!("Hello World");
 }
