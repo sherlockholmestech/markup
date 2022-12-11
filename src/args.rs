@@ -16,9 +16,7 @@
  */
 pub mod read_args{
     use std::env;
-
-    fn get_input_file() -> String {
-        use std::env;
+    pub fn get_input_file() -> String {
         let args: Vec<String> = env::args().collect();
         let filename = args.get(1).expect("ERR 10 -- Unable to get filename");
         return filename.to_string();

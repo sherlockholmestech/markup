@@ -17,6 +17,9 @@
 pub mod io;
 pub mod args;
 use crate::io::read_write;
+use crate::args::read_args;
 fn main() {
-    println!("Hello World");
+    let filepath = read_args::get_input_file();
+    let input_text = read_write::read_input_file(&filepath);
+    println!("{}", input_text);
 }
