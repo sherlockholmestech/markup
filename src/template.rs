@@ -14,16 +14,14 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-pub mod read_args{
-    use std::env;
-    pub fn get_input_file() -> String {
-        let args: Vec<String> = env::args().collect();
-        let filename = args.get(1).expect("ERR 10 -- Unable to get filename");
-        return filename.to_string();
+pub mod boilerplate {
+    use std::fs;
+    pub fn basic_html_top() -> String {
+        let mut return_value = fs::read_to_string("boilerplate/htmltop.txt").unwrap();
+        return return_value;
     }
-    pub fn get_output_file() -> String {
-        let args: Vec<String> = env::args().collect();
-        let filename = args.get(2).expect("ERR 10 -- Unable to get filename");
-        return filename.to_string();
+    pub fn basic_html_bottom() -> String {
+        let mut return_value = fs::read_to_string("boilerplate/htmlbottom.txt").unwrap();
+        return return_value;
     }
 }
