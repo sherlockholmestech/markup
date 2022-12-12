@@ -21,9 +21,4 @@ pub mod read_args{
         let filename = args.get(1).expect("ERR 10 -- Unable to get filename");
         return filename.to_string();
     }
-    pub fn get_output_file() -> String {
-        let args: Vec<String> = env::args().collect();
-        let filename = args.get(2).expect("ERR 10 -- Unable to get filename");
-        return filename.to_string();
-    }
 }
