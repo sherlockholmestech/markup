@@ -1,8 +1,7 @@
 {start}
-#This is a title with heading 1
-This is some text regarding
-some lime breaks
-##This is a title with heading 2
-hi more text that
-is after line breaks
+#Intro
+This is just markdown with some extra bits lol
+##Headings
+Headings are denotated with the ## symbol.
+regular paragraph text follows after.
 {end}
