@@ -42,8 +42,8 @@
             return return_value;
         }
         pub fn paragraph(input: String) -> String {
-            let mut pre_header = String::from("  <p>");
-            let mut post_header = String::from("</p>\n");
+            let pre_header = String::from("  <p>");
+            let post_header = String::from("</p>\n");
             let mut return_value = input.clone();
             return_value = return_value.trim().replace("\n", "<br>");
             return_value.insert_str(0,&pre_header);
