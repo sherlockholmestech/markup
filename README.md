@@ -38,7 +38,7 @@ What do I need to do or know before attempting to use your project
 
 ### Prerequisites
 
-What do I need to install before I can run your project
+None.
 
 ### Installation
 
