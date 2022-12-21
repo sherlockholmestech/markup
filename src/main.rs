@@ -43,6 +43,7 @@ fn main() {
                 output_text.push_str(&parse_modules::parse_methods::paragraph(paragraph_buffer.to_string()));
                 paragraph_buffer.clear();
             }
+        } else if line.contains("{title}") {
         } else {
             paragraph_buffer.push_str(line);
             paragraph_buffer.push_str("\n");

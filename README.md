@@ -55,4 +55,4 @@ How do I use your project
 
 ## Acknowledgements
 
-Who helped you make this project a reality? Friends? Family? Contributors? Instructors?
+Admiral Canaris - Literally nothing at this point
