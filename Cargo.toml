@@ -6,4 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+console = "0.15.2"
+dialoguer = "0.10.2"
+indicatif = "0.17.2"
 regex = "1.7.0"
